@@ -52,17 +52,16 @@ jobs:
       - name: Select Xcode 16
         run: sudo xcode-select -s /Applications/Xcode_16.3.app
 
-      - name: Build for simulator
+      - name: Build (iOS Simulator SDK)
         working-directory: KometSwiftUI
         run: |
           xcodebuild build \
-            -project Komet.xcodeproj \
             -scheme Komet \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
             -configuration Debug \
             CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO \
-            | xcpretty && exit ${PIPESTATUS[0]}
+            CODE_SIGNING_REQUIRED=NO
 
   # ── Job 3: Archive + TestFlight (push to main only, needs secrets) ──────────
   # Reuses the same secrets already defined for the Flutter ios_deploy workflow:
