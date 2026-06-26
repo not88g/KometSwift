@@ -5,12 +5,12 @@ on:
   push:
     branches: [ main, master ]
     paths:
-      - 'KometSwiftUI1/**'
+      - 'KometSwiftUI/**'
       - '.github/workflows/swiftui_build.yml'
   pull_request:
     branches: [ main, master ]
     paths:
-      - 'KometSwiftUI1/**'
+      - 'KometSwiftUI/**'
 
 jobs:
   # ── Job 1: Compile check via Swift PM (no .xcodeproj needed) ───────────────
@@ -29,14 +29,13 @@ jobs:
         run: swift --version
 
       - name: Build (iOS Simulator SDK)
-        working-directory: KometSwiftUI1
+        working-directory: KometSwiftUI
         run: |
-          xcodebuild build \
-            -scheme Komet \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
-            -configuration Debug \
-            CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO
+          swift build \
+            -Xswiftc -sdk \
+            -Xswiftc $(xcrun --sdk iphonesimulator --show-sdk-path) \
+            -Xswiftc -target \
+            -Xswiftc arm64-apple-ios16.0-simulator
 
   # ── Job 2: xcodebuild simulator (needs Komet.xcodeproj committed) ──────────
   xcode-build:
@@ -53,16 +52,14 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_16.3.app
 
       - name: Build for simulator
-        working-directory: KometSwiftUI1
+        working-directory: KometSwiftUI
         run: |
           xcodebuild build \
-            -project Komet.xcodeproj \
             -scheme Komet \
             -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
             -configuration Debug \
             CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO \
-            | xcpretty && exit ${PIPESTATUS[0]}
+            CODE_SIGNING_REQUIRED=NO
 
   # ── Job 3: Archive + TestFlight (push to main only, needs secrets) ──────────
   # Reuses the same secrets already defined for the Flutter ios_deploy workflow:
@@ -120,7 +117,7 @@ jobs:
           PP_NAME=$(security cms -D -i "$PP_PATH" | plutil -extract Name raw -o - -)
           BUNDLE_ID=$(security cms -D -i "$PP_PATH" | plutil -extract Entitlements.application-identifier raw -o - - | sed 's/^[^.]*\.//')
 
-          cat > KometSwiftUI1/ExportOptions.plist <<EOF
+          cat > KometSwiftUI/ExportOptions.plist <<EOF
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
           <plist version="1.0">
@@ -143,7 +140,7 @@ jobs:
           EOF
 
       - name: Archive
-        working-directory: KometSwiftUI1
+        working-directory: KometSwiftUI
         run: |
           TEAM_ID=$(security cms -D -i $RUNNER_TEMP/komet.mobileprovision | plutil -extract TeamIdentifier.0 raw -o - -)
           CERT_NAME=$(security find-identity -v -p codesigning "$KEYCHAIN_PATH" | grep "Apple Distribution" | head -1 | grep -o '".*"' | tr -d '"')
@@ -166,7 +163,7 @@ jobs:
           fi
 
       - name: Export IPA
-        working-directory: KometSwiftUI1
+        working-directory: KometSwiftUI
         run: |
           xcodebuild -exportArchive \
             -archivePath $RUNNER_TEMP/Komet.xcarchive \
