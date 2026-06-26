@@ -1,0 +1,186 @@
+/* Komet - Russian Localizable.strings */
+
+/* Navigation */
+"Chats" = "Чаты";
+"Settings" = "Настройки";
+"New Chat" = "Новый чат";
+"Back" = "Назад";
+"Done" = "Готово";
+"Cancel" = "Отмена";
+"Save" = "Сохранить";
+"Edit" = "Изменить";
+"Delete" = "Удалить";
+"Close" = "Закрыть";
+"Search" = "Поиск";
+"Loading..." = "Загрузка...";
+"Retry" = "Повторить";
+
+/* Auth */
+"Enter your phone number" = "Введите номер телефона";
+"Phone number" = "Номер телефона";
+"Continue" = "Продолжить";
+"Enter code" = "Введите код";
+"Enter the code sent to %@" = "Введите код, отправленный на %@";
+"Resend code" = "Отправить код снова";
+"Enter password" = "Введите пароль";
+"Password" = "Пароль";
+"First name" = "Имя";
+"Last name" = "Фамилия";
+"Register" = "Зарегистрироваться";
+"Paste auth token" = "Вставьте токен авторизации";
+"Sign in with token" = "Войти с токеном";
+"Terms of Service" = "Условия использования";
+"I Accept" = "Принять";
+"Decline" = "Отклонить";
+"Sign out" = "Выйти";
+
+/* Chats list */
+"All" = "Все";
+"No chats yet" = "Нет чатов";
+"No messages" = "Нет сообщений";
+"Photo" = "Фото";
+"Video" = "Видео";
+"File" = "Файл";
+"Audio" = "Аудио";
+"Voice message" = "Голосовое сообщение";
+"Sticker" = "Стикер";
+
+/* Chat */
+"Message" = "Сообщение";
+"Reply" = "Ответить";
+"Forward" = "Переслать";
+"Copy" = "Копировать";
+"Pin" = "Закрепить";
+"Unpin" = "Открепить";
+"Edit message" = "Редактировать";
+"Delete message" = "Удалить сообщение";
+"React" = "Реакция";
+"Read" = "Прочитано";
+"Delivered" = "Доставлено";
+"Sending..." = "Отправка...";
+"Failed to send" = "Ошибка отправки";
+"Pinned message" = "Закреплённое сообщение";
+"Typing..." = "Печатает...";
+"%d members" = "%d участников";
+"Online" = "В сети";
+"Offline" = "Не в сети";
+
+/* Settings */
+"Appearance" = "Внешний вид";
+"Notifications" = "Уведомления";
+"Privacy & Security" = "Конфиденциальность";
+"Network" = "Сеть";
+"Proxy" = "Прокси";
+"Advanced" = "Дополнительно";
+"About Komet" = "О Komet";
+"Storage" = "Хранилище";
+"Auth Method" = "Способ входа";
+"Session Spoofing" = "Спуфинг сессии";
+"Plugins" = "Плагины";
+"Debug" = "Отладка";
+"Cache Management" = "Управление кешем";
+"Active sessions" = "Активные сессии";
+"Export session" = "Экспорт сессии";
+"Terminate all sessions" = "Завершить все сессии";
+"Connection status" = "Статус подключения";
+"Force reconnect" = "Переподключить";
+"Socket Log" = "Лог соединения";
+"Reconnection" = "Переподключение";
+"Bypass" = "Обход блокировок";
+"Komet Misc" = "Прочие настройки";
+"Accounts" = "Аккаунты";
+
+/* Appearance */
+"System" = "Системная";
+"Light" = "Светлая";
+"Dark" = "Тёмная";
+"Theme" = "Тема";
+"Liquid Glass (iOS 26+)" = "Liquid Glass (iOS 26+)";
+"Use native Liquid Glass effect" = "Использовать нативный эффект Liquid Glass";
+
+/* Notifications */
+"Enable notifications" = "Включить уведомления";
+"Sound" = "Звук";
+"Badge" = "Значок";
+"In-app notifications" = "Уведомления внутри приложения";
+"Open in system settings" = "Открыть в системных настройках";
+
+/* Privacy */
+"Last seen" = "Время последнего визита";
+"Everybody" = "Все";
+"Contacts" = "Контакты";
+"Nobody" = "Никто";
+"Two-factor authentication" = "Двухфакторная аутентификация";
+"Block user" = "Заблокировать";
+"Unblock user" = "Разблокировать";
+"Report" = "Пожаловаться";
+"Blocked users" = "Заблокированные пользователи";
+
+/* Network */
+"Connected" = "Подключено";
+"Connecting..." = "Подключение...";
+"Reconnecting..." = "Переподключение...";
+"Disconnected" = "Отключено";
+"Proxy Type" = "Тип прокси";
+"Host" = "Хост";
+"Port" = "Порт";
+"Username" = "Пользователь";
+"Password" = "Пароль";
+"Enable Proxy" = "Включить прокси";
+
+/* Profile */
+"Edit profile" = "Редактировать профиль";
+"Send message" = "Написать сообщение";
+"Bio" = "О себе";
+"Phone" = "Телефон";
+"Username" = "Имя пользователя";
+
+/* Group */
+"Group info" = "Информация о группе";
+"Members" = "Участники";
+"Add member" = "Добавить участника";
+"Kick" = "Исключить";
+"Promote to admin" = "Назначить администратором";
+"Leave group" = "Покинуть группу";
+"Group name" = "Название группы";
+"Create group" = "Создать группу";
+"Join group" = "Вступить в группу";
+"Group link" = "Ссылка на группу";
+
+/* Media */
+"Gallery" = "Галерея";
+"Downloads" = "Загрузки";
+"Files" = "Файлы";
+"Share" = "Поделиться";
+"Download" = "Скачать";
+"Music Library" = "Музыкальная библиотека";
+
+/* Complaints */
+"Reason" = "Причина";
+"Send complaint" = "Отправить жалобу";
+"Spam" = "Спам";
+"Violence" = "Насилие";
+"Pornography" = "Порнография";
+"Child abuse" = "Детская порнография";
+"Drug propaganda" = "Пропаганда наркотиков";
+"Political extremism" = "Политический экстремизм";
+
+/* QR */
+"Scan QR code" = "Сканировать QR-код";
+"Authorize this session?" = "Авторизовать эту сессию?";
+"Show QR code" = "Показать QR-код";
+"Authorize" = "Авторизовать";
+
+/* Errors */
+"Something went wrong" = "Что-то пошло не так";
+"Network error" = "Ошибка сети";
+"Invalid code" = "Неверный код";
+"Too many attempts" = "Слишком много попыток";
+
+/* Misc */
+"Komet is a FOSS client for MAX Messenger.\nBuilt with ❤️ by the Komet Team." = "Komet — FOSS-клиент для MAX Мессенджера.\nСоздан с ❤️ командой Komet.";
+"Latest: %@" = "Актуальная: %@";
+"Telegram Channel" = "Telegram-канал";
+"Source Code" = "Исходный код";
+"No plugins installed" = "Плагины не установлены";
+"Plugins extend Komet's functionality" = "Плагины расширяют возможности Komet";

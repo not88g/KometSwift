@@ -1,0 +1,186 @@
+/* Komet - English Localizable.strings */
+
+/* Navigation */
+"Chats" = "Chats";
+"Settings" = "Settings";
+"New Chat" = "New Chat";
+"Back" = "Back";
+"Done" = "Done";
+"Cancel" = "Cancel";
+"Save" = "Save";
+"Edit" = "Edit";
+"Delete" = "Delete";
+"Close" = "Close";
+"Search" = "Search";
+"Loading..." = "Loading...";
+"Retry" = "Retry";
+
+/* Auth */
+"Enter your phone number" = "Enter your phone number";
+"Phone number" = "Phone number";
+"Continue" = "Continue";
+"Enter code" = "Enter code";
+"Enter the code sent to %@" = "Enter the code sent to %@";
+"Resend code" = "Resend code";
+"Enter password" = "Enter password";
+"Password" = "Password";
+"First name" = "First name";
+"Last name" = "Last name";
+"Register" = "Register";
+"Paste auth token" = "Paste auth token";
+"Sign in with token" = "Sign in with token";
+"Terms of Service" = "Terms of Service";
+"I Accept" = "I Accept";
+"Decline" = "Decline";
+"Sign out" = "Sign out";
+
+/* Chats list */
+"All" = "All";
+"No chats yet" = "No chats yet";
+"No messages" = "No messages";
+"Photo" = "Photo";
+"Video" = "Video";
+"File" = "File";
+"Audio" = "Audio";
+"Voice message" = "Voice message";
+"Sticker" = "Sticker";
+
+/* Chat */
+"Message" = "Message";
+"Reply" = "Reply";
+"Forward" = "Forward";
+"Copy" = "Copy";
+"Pin" = "Pin";
+"Unpin" = "Unpin";
+"Edit message" = "Edit message";
+"Delete message" = "Delete message";
+"React" = "React";
+"Read" = "Read";
+"Delivered" = "Delivered";
+"Sending..." = "Sending...";
+"Failed to send" = "Failed to send";
+"Pinned message" = "Pinned message";
+"Typing..." = "Typing...";
+"%d members" = "%d members";
+"Online" = "Online";
+"Offline" = "Offline";
+
+/* Settings */
+"Appearance" = "Appearance";
+"Notifications" = "Notifications";
+"Privacy & Security" = "Privacy & Security";
+"Network" = "Network";
+"Proxy" = "Proxy";
+"Advanced" = "Advanced";
+"About Komet" = "About Komet";
+"Storage" = "Storage";
+"Auth Method" = "Auth Method";
+"Session Spoofing" = "Session Spoofing";
+"Plugins" = "Plugins";
+"Debug" = "Debug";
+"Cache Management" = "Cache Management";
+"Active sessions" = "Active sessions";
+"Export session" = "Export session";
+"Terminate all sessions" = "Terminate all sessions";
+"Connection status" = "Connection status";
+"Force reconnect" = "Force reconnect";
+"Socket Log" = "Socket Log";
+"Reconnection" = "Reconnection";
+"Bypass" = "Bypass";
+"Komet Misc" = "Komet Misc";
+"Accounts" = "Accounts";
+
+/* Appearance */
+"System" = "System";
+"Light" = "Light";
+"Dark" = "Dark";
+"Theme" = "Theme";
+"Liquid Glass (iOS 26+)" = "Liquid Glass (iOS 26+)";
+"Use native Liquid Glass effect" = "Use native Liquid Glass effect";
+
+/* Notifications */
+"Enable notifications" = "Enable notifications";
+"Sound" = "Sound";
+"Badge" = "Badge";
+"In-app notifications" = "In-app notifications";
+"Open in system settings" = "Open in system settings";
+
+/* Privacy */
+"Last seen" = "Last seen";
+"Everybody" = "Everybody";
+"Contacts" = "Contacts";
+"Nobody" = "Nobody";
+"Two-factor authentication" = "Two-factor authentication";
+"Block user" = "Block user";
+"Unblock user" = "Unblock user";
+"Report" = "Report";
+"Blocked users" = "Blocked users";
+
+/* Network */
+"Connected" = "Connected";
+"Connecting..." = "Connecting...";
+"Reconnecting..." = "Reconnecting...";
+"Disconnected" = "Disconnected";
+"Proxy Type" = "Proxy Type";
+"Host" = "Host";
+"Port" = "Port";
+"Username" = "Username";
+"Password" = "Password";
+"Enable Proxy" = "Enable Proxy";
+
+/* Profile */
+"Edit profile" = "Edit profile";
+"Send message" = "Send message";
+"Bio" = "Bio";
+"Phone" = "Phone";
+"Username" = "Username";
+
+/* Group */
+"Group info" = "Group info";
+"Members" = "Members";
+"Add member" = "Add member";
+"Kick" = "Kick";
+"Promote to admin" = "Promote to admin";
+"Leave group" = "Leave group";
+"Group name" = "Group name";
+"Create group" = "Create group";
+"Join group" = "Join group";
+"Group link" = "Group link";
+
+/* Media */
+"Gallery" = "Gallery";
+"Downloads" = "Downloads";
+"Files" = "Files";
+"Share" = "Share";
+"Download" = "Download";
+"Music Library" = "Music Library";
+
+/* Complaints */
+"Reason" = "Reason";
+"Send complaint" = "Send complaint";
+"Spam" = "Spam";
+"Violence" = "Violence";
+"Pornography" = "Pornography";
+"Child abuse" = "Child abuse";
+"Drug propaganda" = "Drug propaganda";
+"Political extremism" = "Political extremism";
+
+/* QR */
+"Scan QR code" = "Scan QR code";
+"Authorize this session?" = "Authorize this session?";
+"Show QR code" = "Show QR code";
+"Authorize" = "Authorize";
+
+/* Errors */
+"Something went wrong" = "Something went wrong";
+"Network error" = "Network error";
+"Invalid code" = "Invalid code";
+"Too many attempts" = "Too many attempts";
+
+/* Misc */
+"Komet is a FOSS client for MAX Messenger.\nBuilt with ❤️ by the Komet Team." = "Komet is a FOSS client for MAX Messenger.\nBuilt with ❤️ by the Komet Team.";
+"Latest: %@" = "Latest: %@";
+"Telegram Channel" = "Telegram Channel";
+"Source Code" = "Source Code";
+"No plugins installed" = "No plugins installed";
+"Plugins extend Komet's functionality" = "Plugins extend Komet's functionality";
