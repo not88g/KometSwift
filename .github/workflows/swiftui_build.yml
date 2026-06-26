@@ -31,11 +31,12 @@ jobs:
       - name: Build (iOS Simulator SDK)
         working-directory: KometSwiftUI1
         run: |
-          swift build \
-            -Xswiftc -sdk \
-            -Xswiftc $(xcrun --sdk iphonesimulator --show-sdk-path) \
-            -Xswiftc -target \
-            -Xswiftc arm64-apple-ios16.0-simulator
+          xcodebuild build \
+            -scheme Komet \
+            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -configuration Debug \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO
 
   # ── Job 2: xcodebuild simulator (needs Komet.xcodeproj committed) ──────────
   xcode-build:
