@@ -18,6 +18,7 @@ import PackageDescription
 
 let package = Package(
     name: "Komet",
+    defaultLocalization: "en",
     platforms: [.iOS(.v16)],
     products: [
         .library(name: "Komet", targets: ["Komet"])
