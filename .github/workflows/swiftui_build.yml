@@ -33,10 +33,12 @@ jobs:
         run: |
           xcodebuild build \
             -scheme Komet \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
             -configuration Debug \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO
+
 
   # ── Job 2: xcodebuild simulator (needs Komet.xcodeproj committed) ──────────
   xcode-build:
